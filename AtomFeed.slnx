@@ -1,0 +1,11 @@
+﻿<Solution>
+    <Folder Name="/Solution Items/">
+        <File Path="justfile"/>
+        <File Path="LICENSE"/>
+        <File Path="README.md"/>
+    </Folder>
+    <Project Path="src/AtomFeed/AtomFeed.csproj"/>
+    <Project Path="src/AtomFeed.FeedReader/AtomFeed.FeedReader.csproj"/>
+    <Project Path="src/AtomFeed.FeedServer/AtomFeed.FeedServer.csproj"/>
+    <Project Path="tests/AtomFeed.Tests/AtomFeed.Tests.csproj"/>
+</Solution>

@@ -1,0 +1,6 @@
+@AtomFeed_FeedServer_HostAddress = http://localhost:5161
+
+GET {{AtomFeed_FeedServer_HostAddress}}/feed/
+Accept: application/atom+xml
+
+###

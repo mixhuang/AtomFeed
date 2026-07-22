@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageId>AtomFeed</PackageId>
+        <Authors>mixhuang</Authors>
+        <Copyright>Copyright (c) Micheal Huang 2026</Copyright>
+        <Description>Atom Feed (RSS) library for .NET Framework.</Description>
+        <PackageProjectUrl>https://github.com/mixhuang/AtomFeed</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/mixhuang/AtomFeed</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>Atom, Feed, RSS</PackageTags>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RootNamespace>AtomFeed</RootNamespace>
+        <TargetFrameworks>net10.0;</TargetFrameworks>
+        <LangVersion>default</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsAotCompatible>true</IsAotCompatible>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE" Pack="true" PackagePath=""/>
+        <None Include="..\..\README.md" Pack="true" PackagePath=""/>
+    </ItemGroup>
+
+</Project>

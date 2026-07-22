@@ -1,0 +1,58 @@
+namespace AtomFeed.Element;
+
+/// <summary>
+/// <c>title</c>, <c>subtitle</c>, <c>summary</c>, <c>content</c>, and
+/// <c>rights</c> contain human-readable text, usually in small quantities.
+/// The type attribute determines how this information is encoded (default="text").
+/// </summary>
+public class Text {
+    /// <summary>
+    /// Represents text value.
+    /// </summary>
+    public required string Value { get; set; }
+
+    /// <summary>
+    /// Represents text type.
+    /// </summary>
+    public TextType Type { get; set; } = TextType.Text;
+
+    /// <summary>
+    /// The initializer of <see cref="Text"/>.
+    /// </summary>
+    /// <param name="value"></param>
+    /// <returns></returns>
+    public static implicit operator Text(string value) {
+        return new Text {
+            Value = value,
+            Type = TextType.Text
+        };
+    }
+
+    /// <summary>
+    /// Gets the text value.
+    /// </summary>
+    /// <returns></returns>
+    public override string ToString() {
+        return Value;
+    }
+}
+
+/// <summary>
+/// Text type enumeration.
+/// </summary>
+public enum TextType {
+    /// <summary>
+    /// Plain text with no entity escaped HTML.
+    /// </summary>
+    Text,
+
+    /// <summary>
+    /// Entity escaped HTML.
+    /// </summary>
+    Html,
+
+    /// <summary>
+    /// Inline xhtml, wrapped in a <c>div</c> element.
+    /// </summary>
+    Xhtml
+}
